@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.blue {
+  color: #003566;
+  width: 0%;
+}
+
+.text-blue {
+  color: #003566;
+}
+
+.white {
+  color: #fff;
+}
+
+#home {
+  height: 120vh;
+  width: 99.99%;
+  opacity: 1;
+  background: linear-gradient(278deg, blue -30%, cyan 90%);
+}
+
+#home nav {
+  padding: 40px 140px 10px 140px;
+}
+
+#home nav .navbar-nav {
+  margin-left: 10%;
+}
+
+#home nav .navbar-nav .nav-link {
+  position: relative;
+  top: -16px;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  text-decoration: none;
+}
+
+#home nav .navbar-nav .nav-link:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
+#home nav .nav-link {
+  margin-right: 20px;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#home nav .contact-link {
+  left: 50px;
+}
+
+#home .logo {
+  width: 130px;
+}
+
+#home .unicorn-container {
+  overflow: hidden !important;
+}
+
+#home .unicorn-container .banner-title {
+  height: 100vh;
+  position: relative;
+  top: -50px;
+}
+
+#home .unicorn-container .banner-title h1 {
+  width: 60%;
+  text-align: center;
+  font-size: 70px;
+  color: #fff;
+  font-style: italic;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+}
+
+#home .unicorn-container .banner-title button {
+  height: 50px;
+  width: 9.74%;
+  border-radius: 8px;
+  background-color: #003566;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+  -webkit-transition: all 1.5ms;
+  transition: all 1.5ms;
+}
+
+#home .unicorn-container .banner-title button:hover {
+  background-color: #FDB913;
+  color: #000;
+}
+
+#home .unicorn-container .unicorn {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translate(-350px, 10px);
+          transform: translate(-350px, 10px);
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 0;
+}
+/*# sourceMappingURL=style.css.map */
