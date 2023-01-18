@@ -23,46 +23,45 @@ let secF = gsap.timeline({
         });
 
   secF.to('.why-important',5,{y:'-35%'})
-  secF.to('.bulding-blocks',5,{y:'-15%', opacity:1})
-  secF.to('.first-dot',5,{backgroundColor:'#fff'})
+  secF.to('.bulding-blocks',5,{y:'-10%', opacity:1})
+
    secF.fromTo('.text-one',5,{opacity:1,y:'0%'},{y:'-20%',opacity: 0.1, scale:0.5,rotateX:"60deg"},'first')
-   secF.to('.first-dot',5,{backgroundColor:'#1E1E1E'},'first')
-   secF.to('.bulding-blocks-div',5,{top:40},'first')
+
+   secF.to('.bulding-blocks-div',5,{top:20},'first')
+
    secF.to('.text-two',5,{opacity:1, scale:1,rotateX:"0deg"},'first')
    
-   secF.to('first-dot',5,{backgroundColor:'#1E1E1E'})
   //  secF.to('.text-one',5,{opacity:1, y:'-50%',opacity: 0.1, scale:0.8}, 'second')
- 
-   secF.to('.second-dot',5,{backgroundColor:'#fff'},'second')
-  
-   secF.fromTo('.text-two',5,{y:'0%'},{y:'-50%',opacity:0.4,scale:0.7,rotateX:"50deg"},'second-2')
-   secF.to('.bulding-blocks-div',5,{top:-20},'second-2')
+   
+   secF.fromTo('.text-two',5,{y:'0%'},{y:'-80%',opacity:0.4,scale:0.6,rotateX:"50deg"},'second-2')
+   secF.to('.bulding-blocks-div',5,{top:-40},'second-2')
 
-   secF.to('.second-dot',5,{backgroundColor:'#1E1E1E'},'third-2')
-   secF.to('.third-dot',5,{backgroundColor:'#fff'},'third-2')
   //  secF.to('.text-two',5,{opacity:1, y:'-300%'}, 'third')
-  secF.to('.bulding-blocks-div',5,{top:-40},'third-2')
-   secF.fromTo('.text-three',5,{y:'0%'},{y:'-10%',opacity: 1, scale:1 , rotateX:"0deg"},'third-2')
-   secF.to('.text-three',5,{y:'-100%',opacity:0.5, scale:0.79,rotateX:"50deg" },'third-3')
-   secF.to('.third-dot',5,{backgroundColor:'#1E1E1E'},'fourth')
-   secF.to('.bulding-blocks-div',5,{top:-40},'fourth')
 
 
-   
-   secF.to('.forth-dot',5,{backgroundColor:'#fff'},'fourth')
+   secF.fromTo('.text-three',5,{y:'0%'},{y:'-10%',opacity: 1, scale:1.1 , rotateX:"0deg"},'second-2')
+
+   secF.to('.text-three',5,{y:'-120%',opacity:0.5, scale:0.69,rotateX:"50deg" },'third-3')
+   secF.to('.bulding-blocks-div',5,{top:-50},'third-3')
+   secF.to('.bulding-blocks-div',5,{top:-70},'third-3')
   
-   secF.to('.text-four',5,{y:'-100%',opacity: 1, scale:1, rotateX:"0deg"},'fourth-2')
-   secF.to('.forth-dot',5,{backgroundColor:'#1E1E1E'},'fourth-3')
-   secF.to('.fifth-dot',5,{backgroundColor:'#fff'},'fifth-3')
-   secF.to('.text-four',5,{y:'-100%',opacity:0.5, scale:0.79,rotateX:"50deg"},'fifth-3')
-   secF.to('.bulding-blocks-div',5,{top:-80},'fifth')
-   secF.fromTo('.text-five',5,{y:'0%'},{y:'-50%',opacity: 1, scale:1 , rotateX:"0deg"},'fifth')
-   secF.to('.fifth-dot',5,{backgroundColor:'#1E1E1E'},'fifth')
-   secF.to('.sixth-dot',5,{backgroundColor:'#fff'},'fifth')
-   secF.to('.text-five',5,{y:'-100%',opacity: 1, scale:1, rotateX:"0deg"}, 'fifth-2')
-   secF.to('.text-five',5,{y:'-100%',opacity:0.5, scale:0.79,rotateX:"50deg"}, 'fifth-2')
+
+   secF.to('.text-four',5,{y:'-120%',opacity: 1, scale:1.2, rotateX:"0deg"},'third-3')
+
+   secF.to('.text-four',5,{y:'-140%',opacity:0.5, scale:0.79,rotateX:"50deg"},'fifth-3')
+
+   secF.to('.bulding-blocks-div',5,{top:-80},'fifth-3')
+  
+   secF.fromTo('.text-five',5,{y:'0%'},{y:'-110%',opacity: 1, scale:1.2 , rotateX:"0deg"},'fifth-3')
+ 
+
+   secF.to('.text-five',5,{y:'-180%',opacity:0.5, scale:0.89,rotateX:"50deg"}, 'fifth-2')
    
-   secF.fromTo('.text-six',5,{y:'0%'},{y:'-100%',opacity: 1, scale:1 , rotateX:"0deg"},'six')
+   secF.to('.bulding-blocks-div',5,{top:-110},'fifth-2')
+
+   secF.fromTo('.text-six',5,{y:'0%'},{y:'-150%',opacity: 1, scale:1 , rotateX:"0deg"},'fifth-2')
+
+
 
    let projects = gsap.timeline({
     scrollTrigger:{
@@ -71,16 +70,18 @@ let secF = gsap.timeline({
       marker:true,
       scrub:true,
       start:"top top",
-      end:'+=900',
+      end:'+=1200',
     }
   })
+  projects.to('.one',5,{x:0,scale:1.1},'one')
   projects.to('.one',5,{x:'-150%',scale:0.8},'f')
   projects.to('.second',5,{x:'-30%',scale:1.1},'f')
   projects.to('.second',5,{x:'-100%',scale:1.6, opacity:1},'s')
-  
+  projects.to('.second',5,{scale:1.7},'second')
   projects.to('.third',5,{x:'-50%',scale:0.9},"s")
   projects.to('.third',5,{x:'-300%',scale:1.6,opacity:1},"t")
   projects.to('.second',5,{x:'-350%',scale:0.8},"t")
+  projects.to('.third',5,{scale:1.9},'third')
   
 
 
